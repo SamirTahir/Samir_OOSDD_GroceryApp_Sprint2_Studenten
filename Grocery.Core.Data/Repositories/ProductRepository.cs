@@ -39,6 +39,8 @@ namespace Grocery.Core.Data.Repositories
             Product? product = products.FirstOrDefault(p => p.Id == item.Id);
             if (product == null) return null;
             product.Id = item.Id;
+            product.Name = item.Name;
+            product.Stock = item.Stock;
             return product;
         }
     }
