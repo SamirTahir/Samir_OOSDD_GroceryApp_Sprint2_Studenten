@@ -37,9 +37,13 @@ namespace Grocery.Core.Data.Repositories
 
         public GroceryList? Update(GroceryList item)
         {
-            GroceryList? groceryList = groceryLists.FirstOrDefault(g => g.Id == item.Id);
-            groceryList = item;
-            return groceryList;
+            var index = groceryLists.FindIndex(g => g.Id == item.Id);
+            if (index >= 0)
+            {
+                groceryLists[index] = item;
+                return item;
+            }
+            return null;
         }
     }
 }
