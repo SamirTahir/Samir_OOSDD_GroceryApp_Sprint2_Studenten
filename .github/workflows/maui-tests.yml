@@ -47,13 +47,13 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: ./TestResults/*.trx
+          path: ./TestResults/**/*.trx
 
       - name: Rapporteer testresultaten in PR
         if: always()
         uses: dorny/test-reporter@v1
         with:
           name: Unit Test Report
-          path: ./TestResults/*.trx
+          path: ./TestResults/**/*.trx
           reporter: dotnet-trx
           fail-on-error: false
