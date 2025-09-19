@@ -32,6 +32,7 @@ De opdracht is om zelfstandig de login functionaliteit te laten werken.
 7. In App.xaml.cs staat //MainPage = new LoginView(viewModel); Haal hier de // weg en zet de regel erboven in commentaar, zodat AppShell wordt uitgeschakeld.  
 8. Uncomment de route naar het Login scherm in AppShell.xaml.cs: //Routing.RegisterRoute("Login", typeof(LoginView)); 
 
-//Pipeline Test#1
+//Pipeline Test #1
 //Pipeline Test #2
+//Pipeline Test #3
  
