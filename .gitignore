@@ -361,3 +361,21 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# MAUI build cache
+.maui-cache/
+
+# VS Code settings
+.vscode/
+
+# Test results and coverage
+TestResults/
+*.trx
+coverage/
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# Platform-specific build output
+Platforms/*/bin/
+Platforms/*/obj/
